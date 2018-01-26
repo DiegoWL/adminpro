@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Rutas
+import { APP_ROUTES } from './app.routes';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './component/login/login.component';
@@ -10,6 +12,10 @@ import { Graficas1Component } from './component/pages/graficas1/graficas1.compon
 import { HeaderComponent } from './component/shared/header/header.component';
 import { SidebarComponent } from './component/shared/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './component/shared/breadcrumbs/breadcrumbs.component';
+import { ProgressComponent } from './component/pages/progress/progress.component';
+import { PagesComponent } from './component/pages/pages.component';
+import { RegisterComponent } from './component/login/register.component';
+
 
 
 @NgModule({
@@ -21,10 +27,14 @@ import { BreadcrumbsComponent } from './component/shared/breadcrumbs/breadcrumbs
     Graficas1Component,
     HeaderComponent,
     SidebarComponent,
-    BreadcrumbsComponent
+    BreadcrumbsComponent,
+    ProgressComponent,
+    PagesComponent,
+    RegisterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]

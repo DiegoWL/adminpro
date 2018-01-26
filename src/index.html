@@ -39,5 +39,17 @@
 <!--stickey kit -->
 <script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
 <script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script>
+    $(function() {
+        $(".preloader").fadeOut();
+    });
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+    $('#to-recover').on("click", function() {
+        $("#loginform").slideUp();
+        $("#recoverform").fadeIn();
+    });
+</script>
 
 </html>
